@@ -1,0 +1,20 @@
+{
+    "name": "b-chat",
+    "version": "1.0.0",
+    "description": "A real-time chat application",
+    "main": "server/server.js",
+    "scripts": {
+      "start": "node server/server.js"
+    },
+    "author": "Brayan Mrema",
+    "license": "ISC",
+    "dependencies": {
+      "bcrypt": "^5.0.1",
+      "dotenv": "^10.0.0",
+      "express": "^4.17.1",
+      "jsonwebtoken": "^8.5.1",
+      "mongoose": "^6.0.12",
+      "socket.io": "^4.1.2"
+    }
+  }
+  

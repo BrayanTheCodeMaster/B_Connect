@@ -1,0 +1,36 @@
+<!-- chat.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B-Chat Main</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <h1>B-Chat</h1>
+        <div class="dropdown-menu">
+            <ul>
+                <li><a href="#" onclick="showFamily()">B-Chat Family</a></li>
+                <li><a href="#">Created Groups</a></li>
+                <li><a href="#">Create Group</a></li>
+                <li><a href="#">Trending News</a></li>
+                <li><a href="#">Delete Chats</a></li>
+                <li><a href="#" onclick="logout()">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="chat-room">
+        <div id="messages"></div>
+        <input type="text" id="messageInput" placeholder="Type a message..." onkeydown="sendMessage(event)">
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
